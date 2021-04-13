@@ -54,8 +54,16 @@ o teste justamente com as coisas que eu não conhecia direito até nossa convers
 - webpack 2.x
 - element ui
 - axios
+- MySQL
 
 ### Como rodar a aplicação completa
+
+### Dados do MySQL que a API usa:
+    
+    url: jdbc:mysql://localhost:3306/file_structure
+    username: root
+    password: 12345
+*Você precisa criar esta base e este usuário
 
 - Por favor ter a versão 11 do JAVA por favor
 - instalar o Node.js / NPM
