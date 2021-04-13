@@ -69,7 +69,7 @@ public class PastaGatewayImpl implements PastaGateway {
     public Pasta saveOrUpdate(Pasta pasta) throws DocumentAlreadyExistsException {
         if (pasta == null) throw new java.util.NoSuchElementException("Nenhum valor informado!");
         
-        if((pastaRepository.findByNomePastaAndPai(pasta.getNomePasta(), pasta.getPai())==null) && !(pasta.getId()==null))
+        if((!(pastaRepository.findByNomePastaAndPai(pasta.getNomePasta(), pasta.getPai())==null)) && !(pasta.getId()==null))
         	throw new DocumentAlreadyExistsException("Ja existe uma pasta com este nome no diretório de destino!");
         
         return pastaEntityConverter.converter(pastaRepository.save(pastaEntityConverter.converter(pasta)));

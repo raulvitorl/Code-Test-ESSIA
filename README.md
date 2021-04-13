@@ -85,6 +85,7 @@ o teste justamente com as coisas que eu não conhecia direito até nossa convers
 ### Uso
 
 - Rodar o servidor back-end
+        cd ..
 
         cd essia-file-system-api/target/
         
